@@ -17,11 +17,10 @@ const branch =
 export default defineConfig({
   branch,
   authProvider:  new UsernamePasswordAuthJSProvider(),
+  contentApiUrlOverride: '/tina/gql',
 
   // Get this from tina.io
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
-  // Get this from tina.io
-  token: process.env.TINA_TOKEN,
+
 
   build: {
     outputFolder: "admin",
