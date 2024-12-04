@@ -2,6 +2,7 @@ import { defineConfig } from "tinacms";
 import {
   TinaUserCollection,
   UsernamePasswordAuthJSProvider,
+  
 } from 'tinacms-authjs/dist/tinacms'
 
 // Your hosting provider likely exposes this as an environment variable
