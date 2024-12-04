@@ -3,7 +3,8 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-     "dev": "tinacms dev -c \"astro dev\"",
+    "dev": "tinacms dev -c \"astro dev\"",
+    "dev:prod": "TINA_PUBLIC_IS_LOCAL=false tinacms dev -c \"next dev\"",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -13,7 +14,9 @@
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
     "astro": "^5.0.2",
-    "tinacms": "^2.5.0"
+    "next-auth": "^4.24.10",
+    "tinacms": "^2.5.0",
+    "tinacms-authjs": "^8.0.0"
   },
   "devDependencies": {
     "@tinacms/cli": "^1.6.12",

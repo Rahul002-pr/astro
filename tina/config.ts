@@ -1,4 +1,8 @@
 import { defineConfig } from "tinacms";
+import {
+  TinaUserCollection,
+  UsernamePasswordAuthJSProvider,
+} from 'tinacms-authjs/dist/tinacms'
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -7,8 +11,11 @@ const branch =
   process.env.HEAD ||
   "main";
 
+  
+
 export default defineConfig({
   branch,
+  authProvider:  new UsernamePasswordAuthJSProvider(),
 
   // Get this from tina.io
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
